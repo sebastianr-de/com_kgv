@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" method="upgrade">
+    <name>COM_KGV</name>
+    <creationDate>2022-03-01</creationDate>
+    <author>Kleingärtnerverein Rosental e.V.</author>
+    <authorEmail>entwicklung@kgv-rosental.de</authorEmail>
+    <authorUrl>https://entwicklung.kgv-rosental.de</authorUrl>
+    <copyright>Kleingärtnerverein Rosental e.V.</copyright>
+    <license>GNU General Public License version 2 or later;</license>
+    <version>0.0.3</version>
+    <description>COM_KGV_XML_DESCRIPTION</description>
+    <namespace path="src">Rosental\Component\Kgv</namespace>
+    <scriptfile>install.script.php</scriptfile>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>  <!-- Runs on update -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site/">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <!-- Back-end files -->
+    <administration>
+        <!-- Menu entries -->
+        <menu view="kgv">COM_KGV</menu>
+        <submenu>
+            <menu link="option=com_kgv">COM_KGV</menu>
+        </submenu>
+        <files folder="admin/">
+            <folder>services</folder>
+            <folder>sql</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+    </administration>
+    <changelogurl>https://entwicklung.kgv-rosental.de/components/com_kgv/changelog.xml</changelogurl>
+    <updateservers>
+        <server type="extension" name="KGV Updates">
+            https://updateserver.entwicklung.kgv-rosental.de/components/com_kgv/updates.xml
+        </server>
+    </updateservers>
+    <dlid prefix="dlid=" suffix=""/>
+</extension>
