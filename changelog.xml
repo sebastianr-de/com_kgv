@@ -41,4 +41,15 @@
             <item>test version</item>
         </note>
     </changelog>
+    <changelog>
+        <element>com_kgv</element>
+        <type>component</type>
+        <version>0.0.4</version>
+        <fix>
+            <item>Diverse Bugfixes</item>
+        </fix>
+        <note>
+            <item>test version</item>
+        </note>
+    </changelog>
 </changelogs>
