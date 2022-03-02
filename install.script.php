@@ -11,7 +11,7 @@ use Joomla\CMS\Log\Log;
  *
  * @since  1.0.0
  */
-class Com_FoosInstallerScript
+class Com_KgvInstallerScript
 {
     /**
      * Minimum Joomla version to check
@@ -39,7 +39,7 @@ class Com_FoosInstallerScript
      */
     public function install($parent): bool
     {
-        echo Text::_('COM_FOOS_INSTALLERSCRIPT_INSTALL');
+        echo Text::_('COM_KGV_INSTALLERSCRIPT_INSTALL');
         return true;
     }
 
@@ -54,7 +54,7 @@ class Com_FoosInstallerScript
      */
     public function uninstall($parent): bool
     {
-        echo Text::_('COM_FOOS_INSTALLERSCRIPT_UNINSTALL');
+        echo Text::_('COM_KGV_INSTALLERSCRIPT_UNINSTALL');
         return true;
     }
 
@@ -70,7 +70,7 @@ class Com_FoosInstallerScript
      */
     public function update($parent): bool
     {
-        echo Text::_('COM_FOOS_INSTALLERSCRIPT_UPDATE');
+        echo Text::_('COM_KGV_INSTALLERSCRIPT_UPDATE');
         return true;
     }
 
@@ -108,7 +108,7 @@ class Com_FoosInstallerScript
                 return false;
             }
         }
-        echo Text::_('COM_FOOS_INSTALLERSCRIPT_PREFLIGHT');
+        echo Text::_('COM_KGV_INSTALLERSCRIPT_PREFLIGHT');
         return true;
     }
 
@@ -125,7 +125,7 @@ class Com_FoosInstallerScript
      */
     public function postflight($type, $parent)
     {
-        echo Text::_('COM_FOOS_INSTALLERSCRIPT_POSTFLIGHT');
+        echo Text::_('COM_KGV_INSTALLERSCRIPT_POSTFLIGHT');
         return true;
     }
 }
