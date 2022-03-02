@@ -8,7 +8,25 @@
         <changelogurl>https://raw.githubusercontent.com/sebastianr-de/com_kgv/main/changelog.xml</changelogurl>
         <infourl title="README">https://github.com/sebastianr-de/com_kgv/blob/0.0.1/README.md</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/sebastianr-de/com_kgv/archive/refs/tags/0.0.1.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/sebastianr-de/com_kgv/archive/refs/tags/0.0.1.zip
+            </downloadurl>
+        </downloads>
+        <maintainer>Sebastian Reinsch</maintainer>
+        <maintainerurl>https://www.kgv-rosental.de</maintainerurl>
+        <targetplatform name="joomla" version="4.*"/>
+        <php_minimum>7.1</php_minimum>
+    </update>
+    <update>
+        <name>com_kgv</name>
+        <description>Joomla 4.x Komponente zur Verwaltung eines Kleingartenverein</description>
+        <element>com_kgv</element>
+        <type>component</type>
+        <version>0.0.2</version>
+        <changelogurl>https://raw.githubusercontent.com/sebastianr-de/com_kgv/main/changelog.xml</changelogurl>
+        <infourl title="README">https://github.com/sebastianr-de/com_kgv/blob/0.0.2/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/sebastianr-de/com_kgv/archive/refs/tags/0.0.2.zip
+            </downloadurl>
         </downloads>
         <maintainer>Sebastian Reinsch</maintainer>
         <maintainerurl>https://www.kgv-rosental.de</maintainerurl>
