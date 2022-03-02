@@ -33,4 +33,12 @@
             <item>Full Changelog: https://github.com/sebastianr-de/com_kgv/commits/0.0.2</item>
         </note>
     </changelog>
+    <changelog>
+        <element>com_kgv</element>
+        <type>component</type>
+        <version>0.0.3</version>
+        <note>
+            <item>test version</item>
+        </note>
+    </changelog>
 </changelogs>
