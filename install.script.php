@@ -7,7 +7,7 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\Log\Log;
 
 /**
- * Script file of Foo Component
+ * Script file of KGV Component
  *
  * @since  1.0.0
  */

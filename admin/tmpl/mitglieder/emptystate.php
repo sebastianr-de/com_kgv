@@ -5,8 +5,9 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Layout\LayoutHelper;
 
 $displayData = [
-    'textPrefix' => 'COM_KGVS',
+    'textPrefix' => 'COM_KGV',
     'formURL' => 'index.php?option=com_kgv',
+    'helpURL' => 'https://github.com/sebastianr-de/com_kgv/blob/main/README.md',
     'icon' => 'icon-copy',
 ];
 $user = Factory::getApplication()->getIdentity();

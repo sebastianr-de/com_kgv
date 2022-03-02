@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS `#__kgv_details`;
+DROP TABLE IF EXISTS `#__kgv_mitglieder`;

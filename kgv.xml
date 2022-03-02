@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <extension type="component" method="upgrade">
     <name>COM_KGV</name>
-    <creationDate>2022-03-01</creationDate>
     <author>Kleingärtnerverein Rosental e.V.</author>
+    <creationDate>2022-03-01</creationDate>
     <authorEmail>entwicklung@kgv-rosental.de</authorEmail>
     <authorUrl>https://entwicklung.kgv-rosental.de</authorUrl>
     <copyright>Kleingärtnerverein Rosental e.V.</copyright>
     <license>GNU General Public License version 2 or later;</license>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <description>COM_KGV_XML_DESCRIPTION</description>
     <namespace path="src">Rosental\Component\Kgv</namespace>
     <scriptfile>install.script.php</scriptfile>
@@ -29,25 +29,43 @@
     </update>
 
     <files folder="site/">
+        <folder>language</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
     </files>
 
+    <languages>
+        <language tag="en-GB">site/language/en-GB/en-GB.com_kgv.ini</language>
+        <language tag="de-DE">site/language/de-DE/de-DE.com_kgv.ini</language>
+    </languages>
+
     <!-- Back-end files -->
     <administration>
         <!-- Menu entries -->
-        <menu view="kgv">COM_KGV</menu>
+        <menu view="mitglieder">COM_KGV_MENU_LABEL</menu>
         <submenu>
-            <menu link="option=com_kgv">COM_KGV</menu>
+            <menu link="option=com_kgv">COM_KGV_MITGLIEDER_MENU_LABEL</menu>
         </submenu>
         <files folder="admin/">
             <folder>forms</folder>
+            <folder>language</folder>
             <folder>services</folder>
             <folder>sql</folder>
             <folder>src</folder>
             <folder>tmpl</folder>
         </files>
+
+        <languages>
+            <language tag="en-GB">admin/language/en-GB/en-GB.com_kgv.ini</language>
+            <language tag="en-GB">admin/language/en-GB/en-GB.com_kgv.sys.ini</language>
+            <language tag="de-DE">admin/language/de-DE/de-DE.com_kgv.ini</language>
+            <language tag="de-DE">admin/language/de-DE/de-DE.com_kgv.sys.ini</language>
+        </languages>
     </administration>
+    <media folder="media/com_kgv" destination="com_kgv">
+        <folder>js</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
     <changelogurl>https://raw.githubusercontent.com/sebastianr-de/com_kgv/main/changelog.xml</changelogurl>
     <updateservers>
         <server type="extension" name="KGV Updates">

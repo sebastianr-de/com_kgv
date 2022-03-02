@@ -1,7 +1,6 @@
 <?php
 defined('_JEXEC') or die;
 
-use FooNamespace\Component\Foos\Administrator\Extension\FoosComponent;
 use Joomla\CMS\Dispatcher\ComponentDispatcherFactoryInterface;
 use Joomla\CMS\Extension\ComponentInterface;
 use Joomla\CMS\Extension\Service\Provider\CategoryFactory;
@@ -14,7 +13,7 @@ use Joomla\DI\ServiceProviderInterface;
 use Rosental\Component\Kgv\Administrator\Extension\KgvComponent;
 
 /**
- * The foos Service provider.
+ * The Mitglieder Service provider.
  * https://github.com/joomla/joomla-cms/pull/20217
  *
  * @since  1.0.0

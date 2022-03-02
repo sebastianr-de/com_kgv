@@ -7,7 +7,7 @@ use Joomla\CMS\MVC\Controller\BaseController;
 class DisplayController extends BaseController
 {
 
-    protected $default_view = 'kgv';
+    protected $default_view = 'mitglieder';
 
     public function display($cachable = false, $urlparams = [])
     {

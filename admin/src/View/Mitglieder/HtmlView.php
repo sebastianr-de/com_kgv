@@ -1,6 +1,6 @@
 <?php
 
-namespace Rosental\Component\Kgv\Administrator\View\Kgv;
+namespace Rosental\Component\Kgv\Administrator\View\Mitglieder;
 
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
@@ -9,13 +9,9 @@ use Joomla\CMS\Toolbar\ToolbarHelper;
 
 class HtmlView extends BaseHtmlView
 {
-
-    protected $items;
-
     public function display($tpl = null)
     {
         $this->items = $this->get('Items');
-
         if (!count($this->items) && $this->get('IsEmptyState')) {
             $this->setLayout('emptystate');
         }
@@ -26,9 +22,10 @@ class HtmlView extends BaseHtmlView
 
     protected function addToolbar()
     {
-        // Get the toolbar object instance
         $toolbar = Toolbar::getInstance('toolbar');
-        ToolbarHelper::title(Text::_('COM_KGV_MANAGER_KGV'), 'address mitglied');
+
+        ToolbarHelper::title(Text::_('COM_KGV_MANAGER_MITGLIEDER'), 'user mitglied');
+
         $toolbar->addNew('mitglied.add');
     }
 }

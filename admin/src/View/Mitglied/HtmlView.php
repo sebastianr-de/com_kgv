@@ -1,12 +1,19 @@
 <?php
 
-namespace Rosental\Component\Kgv\Administrator\View\Foo;
+namespace Rosental\Component\Kgv\Administrator\View\Mitglied;
+
+defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use Joomla\CMS\Toolbar\ToolbarHelper;
 
+/**
+ * View to edit a mitglied.
+ *
+ * @since  __BUMP_VERSION__
+ */
 class HtmlView extends BaseHtmlView
 {
     /**
@@ -14,7 +21,7 @@ class HtmlView extends BaseHtmlView
      *
      * @var  \JForm
      */
-    protected mixed $form;
+    protected $form;
     /**
      * The active item
      *
@@ -48,8 +55,8 @@ class HtmlView extends BaseHtmlView
     {
         Factory::getApplication()->input->set('hidemainmenu', true);
         $isNew = ($this->item->id == 0);
-        ToolbarHelper::title($isNew ? Text::_('COM_KGV_MANAGER_FOO_NEW') : Text::_('COM_KGV_MANAGER_FOO_EDIT'), 'address foo');
-        ToolbarHelper::apply('foo.apply');
-        ToolbarHelper::cancel('foo.cancel', 'JTOOLBAR_CLOSE');
+        ToolbarHelper::title($isNew ? Text::_('COM_KGV_MANAGER_MITGLIED_NEW') : Text::_('COM_KGV_MANAGER_MITGLIED_EDIT'), 'user mitglied');
+        ToolbarHelper::apply('mitglied.apply');
+        ToolbarHelper::cancel('mitglied.cancel', 'JTOOLBAR_CLOSE');
     }
 }
