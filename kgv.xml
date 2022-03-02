@@ -47,10 +47,10 @@
             <folder>tmpl</folder>
         </files>
     </administration>
-    <changelogurl>https://entwicklung.kgv-rosental.de/components/com_kgv/changelog.xml</changelogurl>
+    <changelogurl>https://raw.githubusercontent.com/sebastianr-de/com_kgv/main/changelog.xml</changelogurl>
     <updateservers>
         <server type="extension" name="KGV Updates">
-            https://updateserver.entwicklung.kgv-rosental.de/components/com_kgv/updates.xml
+            https://raw.githubusercontent.com/sebastianr-de/com_kgv/main/updates.xml
         </server>
     </updateservers>
     <dlid prefix="dlid=" suffix=""/>
